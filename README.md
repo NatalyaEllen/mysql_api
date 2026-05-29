@@ -1,50 +1,4 @@
 
-```md
-# MySQL API - Laravel
-
-## Descrição
-
-Este projeto foi desenvolvido em Laravel com integração ao banco de dados MySQL. A aplicação permite cadastrar e listar produtos por meio de uma API REST e também exibir os dados em uma página Web estilizada.
-
-O banco de dados foi criado manualmente no DBeaver, conforme proposta da atividade.
-
-## Tecnologias utilizadas
-
-- PHP 8
-- Laravel
-- Composer
-- MySQL
-- DBeaver
-- Laragon
-- VS Code
-- Thunder Client
-- Vite
-- CSS
-
-## Funcionalidades
-
-- Cadastro de produtos
-- Listagem de produtos
-- Integração com banco MySQL
-- Rotas API GET e POST
-- Interface Web para visualização dos produtos
-- Testes com Thunder Client
-- Estilização com CSS utilizando Vite
-
-## Estrutura do banco de dados
-
-Banco utilizado:
-
-```txt
-mysql_api
-
-Tabela:
-
-products
-
-Campos principais:
-
-=======
 # MySQL API - Laravel
 
 ## Descrição do Projeto
@@ -61,7 +15,7 @@ A aplicação possui:
 
 ---
 
-# Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * PHP 8
 * Laravel
@@ -75,11 +29,11 @@ A aplicação possui:
 
 ---
 
-# Funcionalidades
+## Funcionalidades
 
-## API de Produtos
+### API de Produtos
 
-### Listar Produtos
+#### Listar Produtos
 
 ```txt
 GET /api/products
@@ -87,9 +41,7 @@ GET /api/products
 
 Retorna todos os produtos cadastrados em JSON.
 
----
-
-### Cadastrar Produtos
+#### Cadastrar Produtos
 
 ```txt
 POST /api/products
@@ -106,9 +58,9 @@ Exemplo:
 
 ---
 
-# Interface Web
+## Interface Web
 
-## Produtos
+### Produtos
 
 ```txt
 /products-view
@@ -116,9 +68,17 @@ Exemplo:
 
 Exibe os produtos cadastrados em uma tabela estilizada.
 
+### Rick and Morty
+
+```txt
+/rickmorty-view
+```
+
+Exibe personagens da API pública Rick and Morty.
+
 ---
 
-# Banco de Dados
+## Banco de Dados
 
 Banco utilizado:
 
@@ -135,14 +95,10 @@ products
 Campos:
 
 ```txt
->>>>>>> 5bd0c878146830bb0bb0918a1bcc34e7fef73ddb
 id
 name
 price
 created_at
-<<<<<<< HEAD
-updated_at 
-=======
 updated_at
 ```
 
@@ -281,9 +237,9 @@ INFO Server running on http://127.0.0.1:8000
 
 ---
 
-# Rotas Disponíveis
+## Rotas Disponíveis
 
-## Página de Produtos
+### Página de Produtos
 
 ```txt
 http://127.0.0.1:8000/products-view
@@ -291,9 +247,7 @@ http://127.0.0.1:8000/products-view
 
 Exibe os produtos cadastrados em uma interface Web.
 
----
-
-## Página Rick and Morty
+### Página Rick and Morty
 
 ```txt
 http://127.0.0.1:8000/rickmorty-view
@@ -301,9 +255,7 @@ http://127.0.0.1:8000/rickmorty-view
 
 Exibe personagens consumidos da API pública Rick and Morty.
 
----
-
-## API de Produtos
+### API de Produtos
 
 ```txt
 http://127.0.0.1:8000/api/products
@@ -313,7 +265,7 @@ Retorna os produtos em formato JSON.
 
 ---
 
-# Testando Cadastro de Produtos
+## Testando Cadastro de Produtos
 
 Método:
 
@@ -338,15 +290,19 @@ Body JSON:
 
 ---
 
-# Tecnologias Utilizadas
+## Tecnologias e Conceitos Aplicados
 
-* Laravel
-* PHP 8
-* MySQL
-* DBeaver
-* Laragon
-* VS Code
-* Thunder Client
-* Blade
+* Laravel MVC
 * API REST
+* MySQL
+* CRUD básico
+* Rotas Web e API
+* Blade
+* JSON
+* Integração com banco de dados
+* Consumo de API externa
+* Vite
+* CSS
+* Thunder Client
+
 
