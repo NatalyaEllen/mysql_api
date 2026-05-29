@@ -34,7 +34,6 @@ O banco de dados foi criado manualmente no DBeaver, conforme proposta da ativida
 - Integração com banco MySQL
 - Rotas API GET e POST
 - Interface Web para visualização dos produtos
-- Página Web consumindo Rick and Morty API
 - Testes com Thunder Client
 - Estilização com CSS utilizando Vite
 
@@ -63,7 +62,6 @@ A aplicação possui:
 * API REST para cadastro e listagem de produtos;
 * Integração com banco MySQL;
 * Interface Web estilizada;
-* Consumo da API Rick and Morty;
 * Uso de rotas Web e API;
 * Frontend utilizando Blade + CSS + Vite.
 
@@ -126,16 +124,6 @@ Exibe os produtos cadastrados em uma tabela estilizada.
 
 ---
 
-## Rick and Morty
-
-```txt
-/rickmorty-view
-```
-
-Exibe personagens da API Rick and Morty em cards estilizados.
-
----
-
 # Banco de Dados
 
 Banco utilizado:
@@ -192,7 +180,7 @@ composer install
 
 ---
 
-## 4. Instalar dependências frontend
+# 4. Instalar dependências frontend
 
 ```bash
 npm install
@@ -282,14 +270,6 @@ php artisan serve
 
 ```txt
 http://127.0.0.1:8000/products-view
-```
-
----
-
-## Rick and Morty
-
-```txt
-http://127.0.0.1:8000/rickmorty-view
 ```
 
 ---
