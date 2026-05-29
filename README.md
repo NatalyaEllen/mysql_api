@@ -1,9 +1,3 @@
-<<<<<<< HEAD
----
-
-# README.md — mysql_api
-
-Cole este conteúdo no arquivo:
 
 ```md
 # MySQL API - Laravel
@@ -156,7 +150,36 @@ updated_at
 
 # Como Executar o Projeto
 
-## 1. Clonar repositório
+## Pré-requisitos
+
+* PHP 8
+* Composer
+* MySQL
+* Laragon
+* VS Code
+
+---
+
+## 1. Iniciar o Laragon
+
+Abrir o Laragon e clicar em:
+
+```txt
+Start All
+```
+
+Verificar se:
+
+```txt
+Apache Running
+MySQL Running
+```
+
+estão ativos.
+
+---
+
+## 2. Clonar o repositório
 
 ```bash
 git clone https://github.com/NatalyaEllen/mysql_api.git
@@ -164,7 +187,7 @@ git clone https://github.com/NatalyaEllen/mysql_api.git
 
 ---
 
-## 2. Entrar na pasta
+## 3. Entrar na pasta
 
 ```bash
 cd mysql_api
@@ -172,7 +195,7 @@ cd mysql_api
 
 ---
 
-## 3. Instalar dependências PHP
+## 4. Instalar dependências
 
 ```bash
 composer install
@@ -180,20 +203,18 @@ composer install
 
 ---
 
-# 4. Instalar dependências frontend
-
-```bash
-npm install
-```
-
----
-
 ## 5. Configurar arquivo .env
 
-Copiar:
+### Windows
 
 ```bash
 copy .env.example .env
+```
+
+### Linux / macOS
+
+```bash
+cp .env.example .env
 ```
 
 ---
@@ -206,7 +227,9 @@ php artisan key:generate
 
 ---
 
-## 7. Configurar banco no .env
+## 7. Configurar banco de dados
+
+Editar o arquivo `.env`:
 
 ```env
 DB_CONNECTION=mysql
@@ -220,9 +243,7 @@ CACHE_STORE=file
 
 ---
 
-# Como Criar Banco de Dados
-
-No DBeaver ou MySQL:
+## 8. Criar banco de dados
 
 ```sql
 CREATE DATABASE mysql_api;
@@ -230,7 +251,7 @@ CREATE DATABASE mysql_api;
 
 ---
 
-# Como Criar Tabela
+## 9. Criar tabela products
 
 ```sql
 USE mysql_api;
@@ -246,43 +267,53 @@ CREATE TABLE products (
 
 ---
 
-# Executar o Projeto
-
-## Terminal 1 — Vite
+## 10. Executar o projeto
 
 ```bash
-npm run dev
+php artisan serve --port=8000
+```
+
+Será exibido:
+
+```txt
+INFO Server running on http://127.0.0.1:8000
 ```
 
 ---
 
-## Terminal 2 — Laravel
+# Rotas Disponíveis
 
-```bash
-php artisan serve
-```
-
----
-
-# Acessar no Navegador
-
-## Produtos
+## Página de Produtos
 
 ```txt
 http://127.0.0.1:8000/products-view
 ```
 
+Exibe os produtos cadastrados em uma interface Web.
+
 ---
 
-## API Products
+## Página Rick and Morty
+
+```txt
+http://127.0.0.1:8000/rickmorty-view
+```
+
+Exibe personagens consumidos da API pública Rick and Morty.
+
+---
+
+## API de Produtos
 
 ```txt
 http://127.0.0.1:8000/api/products
 ```
 
+Retorna os produtos em formato JSON.
+
 ---
 
-# Testar POST no Thunder Client
+# Testando Cadastro de Produtos
 
 Método:
 
@@ -307,18 +338,15 @@ Body JSON:
 
 ---
 
-# Conceitos Aplicados
+# Tecnologias Utilizadas
 
-* API REST
-* Laravel MVC
-* Rotas Web e API
-* Integração MySQL
-* Consumo de API externa
-* JSON
+* Laravel
+* PHP 8
+* MySQL
+* DBeaver
+* Laragon
+* VS Code
+* Thunder Client
 * Blade
-* Vite
-* CSS
-* CRUD básico
-* Frontend e Backend integrados
+* API REST
 
->>>>>>> 5bd0c878146830bb0bb0918a1bcc34e7fef73ddb
